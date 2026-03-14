@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Butterfly Encyclopedia</title>
+    <style>
+        :root {
+            --primary: #6c5ce7;
+            --accent: #fd79a8;
+            --dark: #2d3436;
+            --light: #f9f9f9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light);
+            margin: 0;
+            color: var(--dark);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        /* Category Grid */
+        .butterfly-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .card-content h3 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+
+        .tag {
+            display: inline-block;
+            background: #eee;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            background: #eee;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🦋 The Butterfly Encyclopedia</h1>
+    <p>Exploring the vibrant world of Lepidoptera</p>
+</header>
+
+<div class="container">
+    <section class="intro">
+        <h2>Major Butterfly Families</h2>
+        <p>There are roughly 17,500 species of butterflies in the world. They are generally grouped into six main families.</p>
+    </section>
+
+    <div class="butterfly-grid">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1551842323-66223e74390b?auto=format&fit=crop&q=80&w=600" alt="Swallowtail">
+            <div class="card-content">
+                <span class="tag">Papilionidae</span>
+                <h3>Swallowtails</h3>
+                <p>Recognizable by their "tails" on the hindwings. They are often large and brightly colored.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1543326105-06a9288f6920?auto=format&fit=crop&q=80&w=600" alt="Monarch">
+            <div class="card-content">
+                <span class="tag">Nymphalidae</span>
+                <h3>Brush-footed Butterflies</h3>
+                <p>The largest family, including Monarchs and Painted Ladies. They often walk on only four legs.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1563294132-840974996963?auto=format&fit=crop&q=80&w=600" alt="Sulphur Butterfly">
+            <div class="card-content">
+                <span class="tag">Pieridae</span>
+                <h3>Whites & Sulphurs</h3>
+                <p>Mostly white, yellow, or orange. Common in gardens and known for mass migrations.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1594910360413-5a7a9cc5f67b?auto=format&fit=crop&q=80&w=600" alt="Blue Butterfly">
+            <div class="card-content">
+                <span class="tag">Lycaenidae</span>
+                <h3>Gossamer-winged</h3>
+                <p>Small butterflies including Blues, Coppers, and Hairstreaks. Known for their metallic shine.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1627318356942-df691238e55e?auto=format&fit=crop&q=80&w=600" alt="Skipper Butterfly">
+            <div class="card-content">
+                <span class="tag">Hesperiidae</span>
+                <h3>Skippers</h3>
+                <p>Small, fast-flying butterflies with hooked antennae and stout bodies.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1534438090956-2e9f6487532b?auto=format&fit=crop&q=80&w=600" alt="Metalmark">
+            <div class="card-content">
+                <span class="tag">Riodinidae</span>
+                <h3>Metalmarks</h3>
+                <p>Named for the small metallic-looking spots typically found on their wings.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Nature Explorers | Wings of the World</p>
+</footer>
+
+</body>
+</html>
